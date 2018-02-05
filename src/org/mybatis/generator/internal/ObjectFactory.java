@@ -49,7 +49,7 @@ import org.mybatis.generator.internal.types.JavaTypeResolverDefaultImpl;
 import org.mybatis.generator.runtime.dynamic.sql.IntrospectedTableMyBatis3DynamicSqlImpl;
 
 /**
- * This class creates the different objects needed by the generator.
+ * This class creates the different objects needed by the generator.add _DLC parameter  2018-02-05
  *
  * @author Jeff Butler
  */
@@ -325,6 +325,7 @@ public class ObjectFactory {
         } else if ("Ibatis3".equalsIgnoreCase(type)) { //$NON-NLS-1$
             type = IntrospectedTableMyBatis3Impl.class.getName();
         } else if ("MyBatis3".equalsIgnoreCase(type)) { //$NON-NLS-1$
+        	//read DLC parameter 
             if ("TRUE".equalsIgnoreCase(context.getDlc())) {
             	type = IntrospectedTableMyBatis3Impl_DLC.class.getName();
             } else {

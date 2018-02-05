@@ -110,6 +110,7 @@ public class IntrospectedTableMyBatis3Impl_DLC extends IntrospectedTable {
 
         AbstractJavaClientGenerator javaGenerator;
         if ("XMLMAPPER".equalsIgnoreCase(type)) { //$NON-NLS-1$
+        	//DLC class must   dlc is true
         	if ("TRUE".equalsIgnoreCase(context.getDlc())) 
         		javaGenerator = new JavaMapperGenerator_DLC();
             else

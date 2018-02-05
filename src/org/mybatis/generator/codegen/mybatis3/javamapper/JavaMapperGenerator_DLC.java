@@ -85,7 +85,7 @@ public class JavaMapperGenerator_DLC extends AbstractJavaClientGenerator {
             interfaze.addSuperInterface(fqjt);
             interfaze.addImportedType(fqjt);
         }
-
+        //remove method and extends BaseMapper class
 //        addCountByExampleMethod(interfaze);
 //        addDeleteByExampleMethod(interfaze);
 //        addDeleteByPrimaryKeyMethod(interfaze);
